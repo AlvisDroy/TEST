@@ -67,18 +67,18 @@ proxies:
   - {name: 🇦🇷 TG@ZDYZ2 -阿根廷🇦🇷, server: 190.183.61.62, port: 2053, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
   - {name: TG@ZDYZ2, server: 188.42.88.66, port: 2053, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
   - {name: TG@ZDYZ2 2, server: 205.233.181.36, port: 2053, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
-  - {name: CMCC, server: 104.19.37.65, port: 443, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
-  - {name: CMCC 2, server: 104.19.39.46, port: 443, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
-  - {name: CMCC 3, server: 104.19.39.50, port: 443, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
-  - {name: CMCC 4, server: 104.19.51.231, port: 443, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
-  - {name: CMCC 5, server: 104.19.34.54, port: 443, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
-  - {name: CMCC 6, server: 104.19.35.123, port: 443, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
-  - {name: CT, server: 162.159.152.82, port: 443, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
-  - {name: CT 2, server: 162.159.152.223, port: 443, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
-  - {name: CT 3, server: 162.159.153.228, port: 443, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
-  - {name: CT 4, server: 162.159.153.227, port: 443, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
-  - {name: CT 5, server: 162.159.152.119, port: 443, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
-  - {name: CT 6, server: 162.159.152.150, port: 443, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
+  - {name: CMCC, server: 104.19.42.46, port: 443, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
+  - {name: CMCC 2, server: 104.19.49.117, port: 443, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
+  - {name: CMCC 3, server: 104.19.35.171, port: 443, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
+  - {name: CMCC 4, server: 104.19.39.50, port: 443, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
+  - {name: CMCC 5, server: 104.19.51.231, port: 443, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
+  - {name: CMCC 6, server: 104.19.35.145, port: 443, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
+  - {name: CT, server: 162.159.153.212, port: 443, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
+  - {name: CT 2, server: 162.159.153.202, port: 443, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
+  - {name: CT 3, server: 162.159.153.232, port: 443, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
+  - {name: CT 4, server: 162.159.152.253, port: 443, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
+  - {name: CT 5, server: 162.159.152.166, port: 443, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
+  - {name: CT 6, server: 162.159.152.8, port: 443, client-fingerprint: random, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -11017,4 +11017,26 @@ rules:
   - DOMAIN,m1vtal0vxi.adobestats.io,🍃 应用净化
   - DOMAIN,mmu7w9z4g7.adobestats.io,🍃 应用净化
   - DOMAIN,rrwch5wg04.adobestats.io,🍃 应用净化
+  - DOMAIN,33dghav1u0.adobestats.io,🍃 应用净化
+  - DOMAIN,3eamcreuvn.adobestats.io,🍃 应用净化
+  - DOMAIN,49xq1olxsn.adobestats.io,🍃 应用净化
+  - DOMAIN,5ywl5monp9.adobestats.io,🍃 应用净化
+  - DOMAIN,9lbrsj3eqc.adobestats.io,🍃 应用净化
+  - DOMAIN,bn4i1jgarl.adobestats.io,🍃 应用净化
+  - DOMAIN,dio7fli6oc.adobestats.io,🍃 应用净化
+  - DOMAIN,e4xy0my9e4.adobestats.io,🍃 应用净化
+  - DOMAIN,ol8cco0yne.adobestats.io,🍃 应用净化
+  - DOMAIN,p8seks0alh.adobestats.io,🍃 应用净化
+  - DOMAIN,pf2jezndie.adobestats.io,🍃 应用净化
+  - DOMAIN,tbo1621jaj.adobestats.io,🍃 应用净化
+  - DOMAIN,yf9inv4f4a.adobestats.io,🍃 应用净化
+  - DOMAIN,46si8xsrd4.adobestats.io,🍃 应用净化
+  - DOMAIN,gxxj3ht33q.adobestats.io,🍃 应用净化
+  - DOMAIN,ry5dhsrn9q.adobestats.io,🍃 应用净化
+  - DOMAIN,4anjyeritg.adobestats.io,🍃 应用净化
+  - DOMAIN,7tt98n5vr9.adobestats.io,🍃 应用净化
+  - DOMAIN,k6bbumjg3j.adobestats.io,🍃 应用净化
+  - DOMAIN,s7hxmji3fg.adobestats.io,🍃 应用净化
+  - DOMAIN,w7wnvpf6it.adobestats.io,🍃 应用净化
+  - DOMAIN,85zgeugwrx.adobestats.io,🍃 应用净化
   - MATCH,🐟 漏网之鱼

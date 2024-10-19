@@ -5,61 +5,56 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 加入我的频道t.me/CMLiussss解锁更多优选节点, server: Join.my.Telegram.channel.CMLiussss.to.unlock.more.premium.nodes.cf.090227.xyz, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: CFnat, server: 127.0.0.1, port: 1234, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇺🇸 US, server: 192.0.63.8, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇸🇬 SG, server: 206.238.237.60, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: AT, server: 212.183.88.77, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇷🇺 RU, server: 45.67.215.119, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇺🇸 US 2, server: 216.24.57.36, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: KZ, server: 194.76.18.113, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇺🇸 US 3, server: 192.200.160.168, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇺🇸 US 4, server: 216.24.57.250, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇺🇸 US 5, server: 207.174.31.150, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇬🇧 GB, server: 217.163.76.65, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇺🇸 US 6, server: 216.24.57.111, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇺🇸 US 7, server: 192.200.160.19, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: KW, server: 91.230.213.70, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇸🇬 SG 2, server: 206.238.237.182, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇩🇪 DE, server: 80.158.63.104, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: KZ 2, server: 194.76.18.129, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇭🇰 HK, server: 219.76.13.164, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇺🇸 US 8, server: 62.3.6.160, port: 5555, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇭🇰 HK 2, server: 221.124.240.28, port: 10332, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇰🇷 KR, server: 211.248.216.119, port: 17010, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇰🇷 KR 2, server: 114.30.225.88, port: 30030, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇰🇷 KR 3, server: 61.81.181.169, port: 14985, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇰🇷 KR 4, server: 121.174.104.64, port: 11180, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇺🇸 US 9, server: 204.110.220.65, port: 80, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇺🇸 US 10, server: 144.34.250.149, port: 179, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇺🇸 US 11, server: 13.52.251.56, port: 8444, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇺🇸 US 12, server: 204.110.220.241, port: 80, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇭🇰 HK 3, server: 103.103.245.179, port: 16752, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇺🇸 US 13, server: 129.146.111.62, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇰🇷 KR 5, server: 152.67.212.141, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇯🇵 JP, server: 192.243.127.224, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇭🇰 HK 4, server: 34.150.55.114, port: 48489, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇨🇳 TW, server: 34.81.222.212, port: 2083, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇺🇸 US 14, server: 64.64.244.245, port: 10064, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: 🇭🇰 HK 5, server: 8.218.201.26, port: 8080, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: CT, server: 162.159.153.148, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: CT 2, server: 162.159.153.228, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: CT 3, server: 162.159.152.223, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: CT 4, server: 162.159.153.62, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: CT 5, server: 162.159.152.53, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: CT 6, server: 162.159.152.150, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: CMCC, server: 104.19.34.54, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: CMCC 2, server: 104.19.39.50, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: CMCC 3, server: 104.19.40.69, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: CMCC 4, server: 104.19.35.245, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: CMCC 5, server: 104.19.37.125, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: CMCC 6, server: 104.19.40.144, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: CMCC-IPV6, server: 2606:4700:3036:6ed4:ff6e:712c:4953:87a5, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: CMCC-IPV6 2, server: 2606:4700:3036:0:a36a:4a23:4a60:9f3f, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: CMCC-IPV6 3, server: 2606:4700:3036:0:a36a:4aa4:75d9:9f75, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: CMCC-IPV6 4, server: 2606:4700:3036:6ed4:e1ed:ae00:3c36:e683, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: CMCC-IPV6 5, server: 2606:4700:3036:ef:db9e:ee41:a8df:d3b2, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
-  - {name: CMCC-IPV6 6, server: 2606:4700:3036:6ed4:ffdf:f2ba:820b:ed5c, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, alpn: [h3], tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.ooguy.com, client-fingerprint: random, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.ooguy.com}}}
+  - {name: 加入我的频道t.me/CMLiussss解锁更多优选节点, server: Join.my.Telegram.channel.CMLiussss.to.unlock.more.premium.nodes.cf.090227.xyz, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: CFnat, server: 127.0.0.1, port: 1234, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇺🇸 US, server: 192.9.237.203, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇩🇪 DE, server: 18.192.113.68, port: 8443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: AT, server: 212.183.88.81, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: AT 2, server: 94.177.8.51, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: AT 3, server: 212.183.88.24, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇸🇬 SG, server: 206.238.236.108, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇳🇱 NL, server: 5.255.118.176, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇷🇺 RU, server: 45.67.215.53, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇺🇸 US 2, server: 192.200.160.44, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇺🇸 US 3, server: 216.24.57.30, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇳🇱 NL 2, server: 37.1.207.228, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇺🇸 US 4, server: 216.24.57.111, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: KZ, server: 194.76.18.197, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇺🇸 US 5, server: 69.84.182.234, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇬🇧 GB, server: 217.163.76.147, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇺🇸 US 6, server: 216.24.57.59, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇭🇰 HK, server: 219.76.13.164, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇰🇷 KR, server: 218.152.200.244, port: 12317, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇰🇷 KR 2, server: 140.238.31.153, port: 15914, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇰🇷 KR 3, server: 218.152.197.93, port: 30012, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇰🇷 KR 4, server: 59.15.63.6, port: 37810, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇺🇸 US 7, server: 198.46.159.248, port: 36804, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇺🇸 US 8, server: 142.171.91.132, port: 15042, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇺🇸 US 9, server: 142.11.216.214, port: 10042, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇺🇸 US 10, server: 204.110.220.202, port: 80, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇰🇷 KR 5, server: 152.67.212.141, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇨🇦 CA, server: 192.18.159.129, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇭🇰 HK 2, server: 34.150.55.114, port: 48489, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇯🇵 JP, server: 38.47.105.237, port: 1585, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: 🇺🇸 US 11, server: 64.64.224.226, port: 564, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: CT, server: 162.159.152.122, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: CT 2, server: 162.159.153.232, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: CT 3, server: 162.159.153.216, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: CT 4, server: 162.159.153.179, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: CT 5, server: 162.159.153.178, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: CT 6, server: 162.159.152.14, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: CMCC, server: 104.19.35.245, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: CMCC 2, server: 104.19.35.123, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: CMCC 3, server: 104.19.40.69, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: CMCC 4, server: 104.19.34.51, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: CMCC 5, server: 104.19.42.46, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: CMCC 6, server: 104.19.32.24, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: CMCC-IPV6, server: 2606:4700:3036:0:a36a:4af2:65e7:a0d6, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: CMCC-IPV6 2, server: 2606:4700:3036:ef:95e:7a29:2ccc:d331, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: CMCC-IPV6 3, server: 2606:4700:3036:6ed4:260:e3e9:a48c:8437, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: CMCC-IPV6 4, server: 2606:4700:3036:6ed4:e1ed:ae00:3c36:e683, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: CMCC-IPV6 5, server: 2606:4700:3036:ef:3f32:a9c6:39c4:9ae3, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
+  - {name: CMCC-IPV6 6, server: 2606:4700:3036:6ed4:260:e367:c3d4:d3bb, port: 443, type: vless, uuid: 90a0fef2-a13f-446f-b499-0c101c2847ed, tls: true, tfo: false, skip-cert-verify: true, servername: TG.CMLiussss.dns.army, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: TG.CMLiussss.dns.army}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -80,40 +75,35 @@ proxy-groups:
       - 加入我的频道t.me/CMLiussss解锁更多优选节点
       - CFnat
       - 🇺🇸 US
-      - 🇸🇬 SG
+      - 🇩🇪 DE
       - AT
+      - AT 2
+      - AT 3
+      - 🇸🇬 SG
+      - 🇳🇱 NL
       - 🇷🇺 RU
       - 🇺🇸 US 2
-      - KZ
       - 🇺🇸 US 3
+      - 🇳🇱 NL 2
       - 🇺🇸 US 4
+      - KZ
       - 🇺🇸 US 5
       - 🇬🇧 GB
       - 🇺🇸 US 6
-      - 🇺🇸 US 7
-      - KW
-      - 🇸🇬 SG 2
-      - 🇩🇪 DE
-      - KZ 2
       - 🇭🇰 HK
-      - 🇺🇸 US 8
-      - 🇭🇰 HK 2
       - 🇰🇷 KR
       - 🇰🇷 KR 2
       - 🇰🇷 KR 3
       - 🇰🇷 KR 4
+      - 🇺🇸 US 7
+      - 🇺🇸 US 8
       - 🇺🇸 US 9
       - 🇺🇸 US 10
-      - 🇺🇸 US 11
-      - 🇺🇸 US 12
-      - 🇭🇰 HK 3
-      - 🇺🇸 US 13
       - 🇰🇷 KR 5
+      - 🇨🇦 CA
+      - 🇭🇰 HK 2
       - 🇯🇵 JP
-      - 🇭🇰 HK 4
-      - 🇨🇳 TW
-      - 🇺🇸 US 14
-      - 🇭🇰 HK 5
+      - 🇺🇸 US 11
       - CT
       - CT 2
       - CT 3
@@ -386,9 +376,6 @@ proxy-groups:
     proxies:
       - 🇭🇰 HK
       - 🇭🇰 HK 2
-      - 🇭🇰 HK 3
-      - 🇭🇰 HK 4
-      - 🇭🇰 HK 5
   - name: 🇯🇵 日本节点
     type: load-balance
     strategy: consistent-hashing
@@ -415,9 +402,6 @@ proxy-groups:
       - 🇺🇸 US 9
       - 🇺🇸 US 10
       - 🇺🇸 US 11
-      - 🇺🇸 US 12
-      - 🇺🇸 US 13
-      - 🇺🇸 US 14
   - name: 🇹🇼 台湾节点
     type: load-balance
     strategy: consistent-hashing
@@ -425,7 +409,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 TW
+      - DIRECT
   - name: 🇸🇬 狮城节点
     type: load-balance
     strategy: consistent-hashing
@@ -434,7 +418,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇸🇬 SG
-      - 🇸🇬 SG 2
   - name: 🇰🇷 韩国节点
     type: load-balance
     strategy: consistent-hashing
@@ -10991,4 +10974,26 @@ rules:
   - DOMAIN,m1vtal0vxi.adobestats.io,🍃 应用净化
   - DOMAIN,mmu7w9z4g7.adobestats.io,🍃 应用净化
   - DOMAIN,rrwch5wg04.adobestats.io,🍃 应用净化
+  - DOMAIN,33dghav1u0.adobestats.io,🍃 应用净化
+  - DOMAIN,3eamcreuvn.adobestats.io,🍃 应用净化
+  - DOMAIN,49xq1olxsn.adobestats.io,🍃 应用净化
+  - DOMAIN,5ywl5monp9.adobestats.io,🍃 应用净化
+  - DOMAIN,9lbrsj3eqc.adobestats.io,🍃 应用净化
+  - DOMAIN,bn4i1jgarl.adobestats.io,🍃 应用净化
+  - DOMAIN,dio7fli6oc.adobestats.io,🍃 应用净化
+  - DOMAIN,e4xy0my9e4.adobestats.io,🍃 应用净化
+  - DOMAIN,ol8cco0yne.adobestats.io,🍃 应用净化
+  - DOMAIN,p8seks0alh.adobestats.io,🍃 应用净化
+  - DOMAIN,pf2jezndie.adobestats.io,🍃 应用净化
+  - DOMAIN,tbo1621jaj.adobestats.io,🍃 应用净化
+  - DOMAIN,yf9inv4f4a.adobestats.io,🍃 应用净化
+  - DOMAIN,46si8xsrd4.adobestats.io,🍃 应用净化
+  - DOMAIN,gxxj3ht33q.adobestats.io,🍃 应用净化
+  - DOMAIN,ry5dhsrn9q.adobestats.io,🍃 应用净化
+  - DOMAIN,4anjyeritg.adobestats.io,🍃 应用净化
+  - DOMAIN,7tt98n5vr9.adobestats.io,🍃 应用净化
+  - DOMAIN,k6bbumjg3j.adobestats.io,🍃 应用净化
+  - DOMAIN,s7hxmji3fg.adobestats.io,🍃 应用净化
+  - DOMAIN,w7wnvpf6it.adobestats.io,🍃 应用净化
+  - DOMAIN,85zgeugwrx.adobestats.io,🍃 应用净化
   - MATCH,🐟 漏网之鱼

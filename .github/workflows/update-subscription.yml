@@ -1,0 +1,53 @@
+name: Update Subscription Nodes
+
+on:
+  workflow_dispatch:  # 允许手动触发工作流
+
+jobs:
+  update-subscription:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Git user
+      run: |
+        git config --global user.name "AlvisDroy"
+        git config --global user.email "alvis593088386@gmail.com"
+
+    - name: Pull latest changes from remote
+      run: |
+        git pull origin main --rebase
+
+    - name: Fetch and update subscriptions
+      run: |
+        curl -o TG@Warp_Key.txt -H "User-Agent: clash-verge/v1.5.1" "https://sub.kaiche.tk/?token=auto"
+        curl -o TG@ripaojiedian.txt -H "User-Agent: clash-verge/v1.5.1" "https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash"
+        curl -o TG@vps_jdkz.txt -H "User-Agent: clash-verge/v1.5.1" "https://sub.shengbenku.tk/sub.txt"
+        curl -o TG@ZDYZ2.txt -H "User-Agent: clash-verge/v1.5.1" "https://sub.tgzdyz2.xyz/sub"
+        curl -o YH@33102-2.txt -H "User-Agent: clash-verge/v1.5.1" "https://cfno1.212124.xyz/clash?host=word.212124.xyz&uuid=97e9e73d-2a29-4a1e-b451-093d81c51f7b&path=/xkaopf15da"
+        curl -o YH@33102.txt -H "User-Agent: clash-verge/v1.5.1" "https://ed.212124.xyz/api/sub?host=word.212124.xyz&uuid=97e9e73d-2a29-4a1e-b451-093d81c51f7b&path=/xkaopf15da&type=vless"
+        curl -o YH@33756.txt -H "User-Agent: Mozilla/5.0 (Linux; Android 13; Mi 10 Build/TKQ1.221114.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.9 Mobile Safari/537.36" "https://sub.443888.xyz/vless"
+        curl -o YH@12301.txt -H "User-Agent: clash-verge/v1.5.1" "https://dy.mfsn.cc/sub/v2ray/6a2U5rOV5bCR5aWz"
+        curl -o MY@USER.txt -H "User-Agent: clash-verge/v1.5.1" "https://bpb-6fi.pages.dev/sub/89b3cbba-e6ac-485a-9481-976a0415eab9#BPB-Normal"
+        curl -o TG@gp36y.txt -H "User-Agent: Mozilla/5.0 (Linux; Android 13; Mi 10 Build/TKQ1.221114.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.9 Mobile Safari/537.36" "https://s.36y.me/v3/subscr?id=2e40fe91ce8c4864b1287b9a260ecaa7"
+        cat YH@12301.txt TG@Warp_Key.txt TG@ripaojiedian.txt TG@vps_jdkz.txt TG@ZDYZ2.txt YH@33102-2.txt YH@33102.txt YH@33756.txt MY@USER.txt TG@gp36y.txt > all_nodes.txt
+        git add YH@12301.txt TG@Warp_Key.txt TG@ripaojiedian.txt TG@vps_jdkz.txt TG@ZDYZ2.txt YH@33102-2.txt YH@33102.txt YH@33756.txt MY@USER.txt TG@gp36y.txt all_nodes.txt
+        git commit -m "Update subscription nodes"
+
+    - name: Force push changes to main branch
+      run: git push origin main --force
+
+    - name: Switch to gh-pages branch
+      run: |
+        git checkout gh-pages || git checkout --orphan gh-pages
+
+    - name: Copy subscription file to GitHub Pages
+      run: |
+        cp all_nodes.txt index.txt  # 将文件复制并重命名为index.txt，这样可以通过URL直接访问
+        git add index.txt
+        git commit -m "Update GitHub Pages with latest subscription nodes"
+
+    - name: Force push to gh-pages branch
+      run: git push origin gh-pages --force

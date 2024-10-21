@@ -26,6 +26,10 @@ jobs:
 
     - name: Fetch and update subscriptions
       run: |
+        curl -o 18 -H "User-Agent: clash-verge/v1.5.1" "https://mxlsub.me/free"
+        curl -o 17 -H "User-Agent: clash-verge/v1.5.1" "https://mxlsub.me/free"
+        curl -o 16 -H "User-Agent: clash-verge/v1.5.1" "https://mxlsub.me/free"
+        curl -o 15 -H "User-Agent: clash-verge/v1.5.1" "https://mxlsub.me/free"
         curl -o 14 -H "User-Agent: clash-verge/v1.5.1" "https://apii.xqc.best/api/v1/client/subscribe?token=e4479c8eeac375e5bb480b7dcd8ac899"
         curl -o 13 -H "User-Agent: clash-verge/v1.5.1" "https://cfvmess.cacoman.us.kg/auto"
         curl -o 12 -H "User-Agent: clash-verge/v1.5.1" "https://fs.v2rayse.com/share/20241009/jkie7f8lvp.yaml"
@@ -36,12 +40,12 @@ jobs:
         curl -o 07 -H "User-Agent: clash-verge/v1.5.1" "https://vless.fxxk.dedyn.io/auto"
         curl -o 06 -H "User-Agent: clash-verge/v1.5.1" "https://sub.tgzdyz2.xyz/sub"
         curl -o 05 -H "User-Agent: clash-verge/v1.5.1" "https://x.yoy.pp.ua/api/v1/client/subscribe?token=7621729947c96c34b8759343eb056103"
-        curl -o 04 -H "User-Agent: clash-verge/v1.5.1" "https://0p0.me/zwiyb5de.html"
+        curl -o 04 -H "User-Agent: clash-verge/v1.5.1" "https://0p0.me/x1p164hq.html"
         curl -o 03 -H "User-Agent: Mozilla/5.0 (Linux; Android 13; Mi 10 Build/TKQ1.221114.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.9 Mobile Safari/537.36" "https://sub.443888.xyz/vless"
         curl -o 02 -H "User-Agent: clash-verge/v1.5.1" "https://pqjc.site/api/v1/client/subscribe?token=8bcfa970c037de514b087a4750406631"
         curl -o 01 -H "User-Agent: clash-verge/v1.5.1" "https://bpb-6fi.pages.dev/sub/89b3cbba-e6ac-485a-9481-976a0415eab9#BPB-Normal"
-        cat 14 13 12 11 10 09 07 06 05 04 03 02 01 > all
-        git add 14 13 12 11 10 09 07 06 05 04 03 02 01 all
+        cat 18 17 16 15 14 13 12 11 10 09 07 06 05 04 03 02 01 > all
+        git add 18 17 16 15 14 13 12 11 10 09 07 06 05 04 03 02 01 all
         git commit -m "Update subscription nodes"
 
     - name: Force push changes to main branch

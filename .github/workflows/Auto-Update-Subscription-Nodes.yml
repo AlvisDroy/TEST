@@ -26,7 +26,7 @@ jobs:
 
     - name: Fetch and update subscriptions
       run: |
-        curl -o 14 -H "User-Agent: clash-verge/v1.5.1" "https://mxlsub.me/free"
+        curl -o 14 -H "User-Agent: clash-verge/v1.5.1" "https://apii.xqc.best/api/v1/client/subscribe?token=e4479c8eeac375e5bb480b7dcd8ac899"
         curl -o 13 -H "User-Agent: clash-verge/v1.5.1" "https://cfvmess.cacoman.us.kg/auto"
         curl -o 12 -H "User-Agent: clash-verge/v1.5.1" "https://fs.v2rayse.com/share/20241009/jkie7f8lvp.yaml"
         curl -o 11 -H "User-Agent: Mozilla/5.0 (Linux; Android 13; Mi 10 Build/TKQ1.221114.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.9 Mobile Safari/537.36" "https://vless.durl.nyc.mn/zrf"

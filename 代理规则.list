@@ -1,0 +1,46 @@
+DOMAIN-KEYWORD,bqg123
+
+
+
+#  - DOMAIN-KEYWORD,nodes_sub
+
+#- DOMAIN,ad.com           # 匹配完整域名
+#- DOMAIN-SUFFIX,google.com           # 匹配域名后缀
+#- DOMAIN-KEYWORD,google           # 使用域名关键字匹配
+#- DOMAIN-REGEX,^abc.*com           # 域名正则表达式匹配
+#- GEOSITE,youtube           # 匹配 Geosite 内的域名，部分内容参考 v2fly/domain-list-community
+#- IP-CIDR,127.0.0.0/8,no-resolve           # 匹配 IP 地址范围，IP-CIDR+IP-CIDR6效果是一样的，IP-CIDR6只是一个别名
+#- IP-CIDR6,2620:0:2d0:200::7/32
+#- IP-SUFFIX,8.8.8.8/24 #匹配 IP 后缀范围
+#- IP-ASN,13335           # 匹配 IP 所属 ASN
+#- GEOIP,CN #匹配 IP 所属国家代码
+#- SRC-GEOIP,cn           # 匹配来源 IP 所属国家代码
+#- SCR-IP-ASN,9808           # 匹配来源 IP 所属ASN
+#- SRC-IP-CIDR,192.168.1.201/32           # 匹配来源 IP 地址范围
+#- SRC-IP-SUFFIX,192.168.1.201/8           # 匹配来源 IP 后缀范围
+#- DST-PORT,80           # 匹配请求目标端口范围
+#- SRC-PORT,7777           # 匹配请求来源端口范围
+#- IN-PORT,7890           # 匹配入站端口,可用端口范围
+#- IN-TYPE,SOCKS/HTTP           # 匹配入站类型
+#- IN-USER,mihomo           # 匹配入站用户名，支持使用 / 分隔多个用户名
+#- IN-NAME,ss           # 匹配入站名称
+#- PROCESS-PATH,/usr/bin/wget           # 使用完整进程路径匹配
+#- PROCESS-PATH,C:\Program Files\Google\Chrome\Application\chrome.exe           # 使用进程路径正则表达式匹配
+#- PROCESS-PATH-REGEX,.*bin/wget           # 使用进程路径正则表达式匹配
+#- PROCESS-PATH-REGEX,(?i).*Application\\chrome.*           # 
+#- PROCESS-NAME,curl           # 使用进程匹配，在Android平台可以匹配包名
+#- PROCESS-NAME,chrome.exe           # 
+#- PROCESS-NAME,com.termux           # 
+#- PROCESS-NAME-REGEX,curl$           # 使用进程名称正则表达式匹配，在Android平台可以匹配包名
+#- PROCESS-NAME-REGEX,(?i)Telegram           # 
+#- PROCESS-NAME-REGEX,.*telegram.*           # 
+#- UID,1001           # 匹配 Linux USER ID
+#- NETWORK,udp           # 匹配tcp或者udp
+#- DSCP,4           # 匹配DSCP标记 (仅限 tproxy udp 入站)
+#- RULE-SET,providername           # 引用规则集合，需配置rule-providers
+#- AND,((DOMAIN,baidu.com),(NETWORK,UDP))           # 逻辑规则，需要注意括号的使用
+#- OR,((NETWORK,UDP),(DOMAIN,baidu.com))           # 
+#- NOT,((DOMAIN,baidu.com))           # 
+#- SUB-RULE,(NETWORK,tcp)           # 匹配至子规则,需要注意括号的使用
+#- MATCH           # 匹配所有请求，无需条件
+# no-resolve           # 域名开始匹配关于 目标IP 规则时，mihomo 将触发 dns 解析来检查域名的 目标IP 是否匹配规则，可以选择 no-resolve 选项以跳过 dns 解析。如在更早的匹配中触发了 dns 解析，则依旧会匹配到添加了 no-resolve 选项的 目标IP 类规则

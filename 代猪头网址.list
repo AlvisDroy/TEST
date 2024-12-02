@@ -1,6 +1,6 @@
-DOMAIN-KEYWOD,xiaoxintv
-DOMAIN-KEYWORD,olehdtv
-DOMAIN-KEYWORD,iyf.tv
+#DOMAIN-KEYWOD,xiaoxintv
+#DOMAIN-KEYWORD,olehdtv
+#DOMAIN-KEYWORD,iyf.tv
 DOMAIN,www.olehdtv.com
 #- DOMAIN,ad.com           # 匹配完整域名
 #- DOMAIN-SUFFIX,google.com           # 匹配域名后缀

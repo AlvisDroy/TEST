@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "type": "logical",
+      "mode": "and",
+      "rules": [
+        {
+          "domain": [
+        "alvis.dns.navy",
+        "k30pro.dynv6.net",
+        "k35-256.dynv6.net",
+        "k35-64.dynv6.net",
+        "lgv30.dynv6.net",
+        "lianxiang.dynv6.net",
+        "mi10-256.dynv6.net",
+        "oneplus-12.dynv6.net",
+        "yunyancong.dns.navy",
+        "um480xt.dynv6.net",
+        "pc-win10.dynv6.net",
+        "mi8-128.dynv6.net"
+      ]
+        },
+        {
+          "ip_version": [6]
+        }
+      ],
+      "invert": false
+    }
+  ]
+}

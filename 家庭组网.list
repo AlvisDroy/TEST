@@ -1,26 +1,9 @@
-DOMAIN-KEYWORD,dynv6
-DOMAIN-KEYWORD,dns.navy
-DOMAIN-KEYWORD,fofoyy
-DOMAIN-KEYWORD,seasun
-DOMAIN-KEYWORD,ddys.pro
-DOMAIN-KEYWORD,nnyy.in
-DOMAIN-KEYWORD,mxlsub
-DOMAIN-KEYWORD,subikun
-DOMAIN,ip111.cn
-DOMAIN,yaohuo.me
-
-
-
-#PROCESS-NAME,legado
-#PROCESS-NAME,taobao
-#PROCESS-NAME,tencent
-#PROCESS-NAME,coolapk
-#PROCESS-NAME,jingdong
-#DOMAIN,m.yfsp.tv
-#DOMAIN,sub.443888.xyz
-#DOMAIN,down-load.lanrar.com
-#DOMAIN,ikandy.fun
-#DOMAIN-KEYWORD,zdyz2
+IP-CIDR,192.168.1.19/32
+IP-CIDR,192.168.1.2/32
+IP-CIDR,192.168.1.46/32
+IP-CIDR,192.168.42.0/24
+IP-CIDR,192.168.43.0/24
+IP-CIDR,192.168.9.0/24
 
 #- DOMAIN,ad.com           # 匹配完整域名
 #- DOMAIN-SUFFIX,google.com           # 匹配域名后缀

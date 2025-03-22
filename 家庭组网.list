@@ -4,6 +4,7 @@ IP-CIDR,192.168.1.46/32
 IP-CIDR,192.168.42.0/24
 IP-CIDR,192.168.43.0/24
 IP-CIDR,192.168.9.0/24
+PROCESS-NAME,com.taobao.taobao
 
 #- DOMAIN,ad.com           # 匹配完整域名
 #- DOMAIN-SUFFIX,google.com           # 匹配域名后缀

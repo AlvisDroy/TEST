@@ -8,8 +8,8 @@ DOMAIN,ip111.cn
 DOMAIN,yaohuo.me
 DOMAIN,lf3-static.bytednsdoc.com
 DOMAIN,v5-dy-o-abtest.zjcdn.com
-DOMAIN,www.googleapis.cn
-DOMAIN,www.google.cn
+#DOMAIN,www.googleapis.cn
+#DOMAIN,www.google.cn
 DOMAIN-SUFFIX,amemv.com
 DOMAIN-SUFFIX,douyincdn.com
 DOMAIN-SUFFIX,douyinpic.com

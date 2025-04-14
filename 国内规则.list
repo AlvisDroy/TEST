@@ -4,6 +4,7 @@ DOMAIN-KEYWORD,ddys.pro
 DOMAIN-KEYWORD,nnyy.in
 DOMAIN-KEYWORD,mxlsub
 DOMAIN-KEYWORD,subikun
+DOMAIN,ipapi.co
 DOMAIN,ip111.cn
 DOMAIN,yaohuo.me
 DOMAIN,lf3-static.bytednsdoc.com
@@ -52,7 +53,6 @@ DOMAIN-SUFFIX,wxapp.tc.qq.com
 DOMAIN-SUFFIX,wxs.qq.com
 DOMAIN-SUFFIX,yun-hl.3g.qq.com
 IP-ASN,132203,no-resolve
-
 #PROCESS-NAME,legado
 #PROCESS-NAME,taobao
 #PROCESS-NAME,tencent

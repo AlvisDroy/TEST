@@ -53,6 +53,10 @@ DOMAIN-SUFFIX,wx.qq.com
 DOMAIN-SUFFIX,wxapp.tc.qq.com
 DOMAIN-SUFFIX,wxs.qq.com
 DOMAIN-SUFFIX,yun-hl.3g.qq.com
+DOMAIN-KEYWORD,dns.navy
+PROCESS-NAME,com.taobao.taobao
+PROCESS-NAME,com.tencent.mm
+DOMAIN-KEYWORD,taobao
 
 
 #PROCESS-NAME,legado

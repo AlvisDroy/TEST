@@ -55,6 +55,8 @@ DOMAIN-SUFFIX,wxs.qq.com
 DOMAIN-SUFFIX,yun-hl.3g.qq.com
 DOMAIN-KEYWORD,dns.navy
 DOMAIN-KEYWORD,taobao
+DOMAIN-KEYWORD,iot
+DOMAIN-KEYWORD,lhh
 
 
 #PROCESS-NAME,com.taobao.taobao

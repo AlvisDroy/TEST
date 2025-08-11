@@ -4,6 +4,8 @@ DOMAIN-KEYWORD,ddys.pro
 DOMAIN-KEYWORD,nnyy.in
 DOMAIN-KEYWORD,mxlsub
 DOMAIN-KEYWORD,subikun
+DOMAIN-KEYWORD,taobao
+DOMAIN-KEYWORD,wbshuku
 DOMAIN,wawo.wiki
 DOMAIN,ipapi.co
 DOMAIN,ipip.net
@@ -57,7 +59,6 @@ DOMAIN-SUFFIX,yun-hl.3g.qq.com
 DOMAIN-KEYWORD,dns.navy
 PROCESS-NAME,com.taobao.taobao
 PROCESS-NAME,com.tencent.mm
-DOMAIN-KEYWORD,taobao
 
 
 #PROCESS-NAME,legado

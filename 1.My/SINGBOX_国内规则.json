@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "ip_cidr":[
+        "146.112.41.2/32"
+      ],
+      "domain": [
+        "ipapi.co",
+        "ipip.net",
+        "ip111.cn",
+        "yaohuo.me",
+        "wawo.wiki",
+        "joeyblog.net",
+        "inarigal.com",
+        "dldir1.qq.com",
+        "btrace.qq.com",
+        "soup.v.qq.com",
+        "www.google.cn",
+        "slife.xy-asia.com",
+        "wup.imtt.qq.com",
+        "weixin110.qq.com",
+        "www.googleapis.cn",
+        "vweixinf.tc.qq.com",
+        "v5-dy-o-abtest.zjcdn.com",
+        "lf3-static.bytednsdoc.com",
+        "apd-pcdnwxlogin.teg.tencent-cloud.net"
+      ]
+      "domain_suffix": [
+        ".qpic.cn",
+        ".qlogo.cn",
+        ".de5.net",
+        ".alvis.de5.net",
+        ".v6.army",
+        ".dns.navy",
+        ".dynv6.net",
+        ".ixigua.com",
+        ".weixin.com",
+        ".snssdk.com",
+        ".pstatp.com",
+        ".wx.qq.com",
+        ".amemv.com",
+        ".tenpay.com",
+        ".toutiao.com",
+        ".wechat.com",
+        ".map.qq.com",
+        ".wxs.qq.com",
+        ".wechatos.net",
+        ".douyinpic.com",
+        ".douyincdn.com",
+        ".douyinvod.com",
+        ".weixinsxy.com",
+        ".lbs.gtimg.com",
+        ".weixin.qq.com",
+        ".idouyinvod.com",
+        ".wx.gtimg.com",
+        ".ixiguavideo.com",
+        ".wechatpay.com",
+        ".iot-tencent.com",
+        ".wechatlegal.net",
+        ".douyinstatic.com",
+        ".weixinbridge.com",
+        ".up-hl.3g.qq.com",
+        ".servicewechat.com",
+        ".wxapp.tc.qq.com",
+        ".yun-hl.3g.qq.com",
+        ".vweixinthumb.tc.qq.com"
+      ],
+      "domain_keyword": [
+          "qq",
+          "ccb",
+          "beqg",
+          "seasun",
+          "weixin",
+          "alipay",
+          "mxlsub",
+          "subikun",
+          "taobao",
+          "fofoyy",
+          "coolapk",
+          "mybank",
+          "tencent",
+          "wbshuku",
+          "nnyy.in",
+          "ddys.pro"
+        ],
+        "package_name": [
+          "com.tencent.mm",
+          "com.taobao.taobao"
+        ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain_keyword": [
+          "qq",
+          "ccb",
+          "beqg",
+          "seasun",
+          "weixin",
+          "alipay",
+          "mxlsub",
+          "subikun",
+          "taobao",
+          "fofoyy",
+          "coolapk",
+          "mybank",
+          "tencent",
+          "wbshuku",
+          "nnyy.in",
+          "ddys.pro"
+      ]
+    }
+  ]
+}

@@ -22,7 +22,9 @@
         "v5-dy-o-abtest.zjcdn.com",
         "lf3-static.bytednsdoc.com",
         "apd-pcdnwxlogin.teg.tencent-cloud.net"
-      ],
+      ]
+    },
+    {
       "domain_suffix": [
         ".qpic.cn",
         ".qlogo.cn",
@@ -62,7 +64,9 @@
         ".wxapp.tc.qq.com",
         ".yun-hl.3g.qq.com",
         ".vweixinthumb.tc.qq.com"
-      ],
+      ]
+    },
+    {
       "domain_keyword": [
           "qq",
           "ccb",
@@ -80,10 +84,14 @@
           "wbshuku",
           "nnyy.in",
           "ddys.pro"
-      ],
+      ]
+    },
+    {
       "ip_cidr": [
         "146.112.41.2/32"
-      ],
+      ]
+    },
+    {
       "package_name": [
         "com.tencent.mm",
         "com.taobao.taobao"

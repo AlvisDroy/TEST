@@ -6,11 +6,15 @@
           "cpn.ficc.cc",
           "f-droid.org",
           "v2.jsyml.cn"  
-        ],
+        ]
+    },
+    {
       "domain_suffix": [
           ".ip.sb",
           ".ip-api.com"
-        ],
+        ]
+    },
+    {
       "domain_keyword": [
           "yckceo",
           "bqg123",

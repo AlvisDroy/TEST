@@ -1,10 +1,7 @@
 {
-  "version": 1,
+  "version": 3,
   "rules": [
     {
-      "ip_cidr":[
-        "146.112.41.2/32"
-      ],
       "domain": [
         "ipapi.co",
         "ipip.net",
@@ -83,11 +80,14 @@
           "wbshuku",
           "nnyy.in",
           "ddys.pro"
-        ],
-        "package_name": [
-          "com.tencent.mm",
-          "com.taobao.taobao"
-        ]
+      ],
+      "ip_cidr": [
+        "146.112.41.2/32"
+      ],
+      "package_name": [
+        "com.tencent.mm",
+        "com.taobao.taobao"
+      ]
     }
   ]
 }

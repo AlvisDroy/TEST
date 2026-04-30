@@ -25,6 +25,14 @@
           "spacedesk",
           "missav"
         ]
+    },
+    {
+      "package_name": [
+        "com.android.vending",
+        "com.google.android.youtube",
+        "com.zhiliaoapp.musically",
+        "com.openai.chatgpt"
+      ]
     }
   ]
 }

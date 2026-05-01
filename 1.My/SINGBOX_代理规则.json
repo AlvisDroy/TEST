@@ -1,6 +1,17 @@
 {
-  "version": 1,
+  "version": 3,
   "rules": [
+    {
+      "package_name": [
+        "com.android.vending",
+        "com.google.android.youtube",
+        "com.zhiliaoapp.musically",
+        "com.openai.chatgpt",
+        "com.google.android.gms",
+        "com.google.android.gsf",
+        "com.google.android.gsf.login"
+      ]
+    },
     {
       "domain": [
           "cpn.ficc.cc",
@@ -8,7 +19,13 @@
           "v2.jsyml.cn",
           "services.googleapis.cn",
           "googleapis.cn",
-          "xn--ngstr-lra8j.com"
+          "xn--ngstr-lra8j.com",
+          "play.google.com",
+          "googleapis.com",
+          "android.clients.google.com",
+          "googleusercontcent.com",
+          "gstatic.com",
+          "dl.google.com"
         ]
     },
     {
@@ -28,14 +45,6 @@
           "spacedesk",
           "missav"
         ]
-    },
-    {
-      "package_name": [
-        "com.android.vending",
-        "com.google.android.youtube",
-        "com.zhiliaoapp.musically",
-        "com.openai.chatgpt"
-      ]
     }
   ]
 }

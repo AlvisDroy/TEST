@@ -1,0 +1,1 @@
+curl -k -L -o SINGBOX_fakeipfilter.json "https://gh-proxy.com/https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/rules/fakeipfilter.json"

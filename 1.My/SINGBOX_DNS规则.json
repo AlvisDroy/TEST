@@ -4,12 +4,14 @@
     {
       "domain_suffix": [
         "dynv6.net",
-        "dns.navy"
+        "dns.navy",
+        "x-aniu"
       ],
       "domain": [
         "yaohuo.me",
         "ip111.cn",
-        "myip.ipip.net"
+        "myip.ipip.net",
+        "www.x-aniu.com"
       ]
     }
   ]

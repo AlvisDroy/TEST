@@ -2,6 +2,11 @@
   "version": 3,
   "rules": [
     {
+      "ip_cidr": [
+        "::/0"
+      ]
+    },
+    {
       "domain": [
         "ipapi.co",
         "ipip.net",

@@ -20,6 +20,7 @@ DOMAIN,lf3-static.bytednsdoc.com
 DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net
 DOMAIN-SUFFIX,qpic.cn
 DOMAIN-SUFFIX,qlogo.cn
+DOMAIN-SUFFIX,us.ci
 DOMAIN-SUFFIX,de5.net
 DOMAIN-SUFFIX,alvis.de5.net
 DOMAIN-SUFFIX,v6.army
@@ -59,6 +60,7 @@ DOMAIN-SUFFIX,vweixinthumb.tc.qq.com
 DOMAIN-KEYWORD,qq
 DOMAIN-KEYWORD,ccb
 DOMAIN-KEYWORD,beqg
+DOMAIN-KEYWORD,alvis
 DOMAIN-KEYWORD,seasun
 DOMAIN-KEYWORD,weixin
 DOMAIN-KEYWORD,alipay

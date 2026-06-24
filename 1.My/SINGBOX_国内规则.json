@@ -3,7 +3,14 @@
   "rules": [
     {
       "ip_cidr": [
-        "::/0"
+        "::/0",
+        "146.112.41.2/32"
+      ]
+    },
+    {
+      "package_name": [
+        "com.tencent.mm",
+        "com.taobao.taobao"
       ]
     },
     {
@@ -94,17 +101,6 @@
           "wbshuku",
           "nnyy.in",
           "ddys.pro"
-      ]
-    },
-    {
-      "ip_cidr": [
-        "146.112.41.2/32"
-      ]
-    },
-    {
-      "package_name": [
-        "com.tencent.mm",
-        "com.taobao.taobao"
       ]
     }
   ]

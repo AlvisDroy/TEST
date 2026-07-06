@@ -5,12 +5,13 @@ DOMAIN,v2.jsyml.cn
 DOMAIN,thebest.alvisdroy.workers.dev
 DOMAIN-SUFFIX,ip.sb
 DOMAIN-SUFFIX,ip-api.com
-DOMAIN-KEYWORD,cloudflare
+DOMAIN-KEYWORD,github
 DOMAIN-KEYWORD,yckceo
 DOMAIN-KEYWORD,bqg123
 DOMAIN-KEYWORD,taohua
 DOMAIN-KEYWORD,pixabay
 DOMAIN-KEYWORD,yunfuhua
+DOMAIN-KEYWORD,cloudflare
 DOMAIN-KEYWORD,greasyfork
 DOMAIN-KEYWORD,spacedesk
 PROCESS-NAME,com.google.android.youtube

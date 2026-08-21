@@ -1,76 +1,25 @@
 #!/system/bin/sh
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-
 # 将二进制文件目录加入 PATH
 export PATH="/data/adb/二进制文件:$PATH"
+proxy="https://gh-proxy.com/"
+# 并发任务数（可自定义，例如 3、5、10、30）
+MAX_CONCURRENT=30
 
-PROXY="https://gh-proxy.com/"
-#PROXY="https://ghfast.top/"
-#PROXY="https://ghproxy.com/"
-#PROXY="https://github.moeyy.cn/"
-#PROXY="https://mirror.ghproxy.com/"
-#PROXY="https://kgithub.com/"
-#PROXY="https://kgithub.com/"
-#PROXY="https://kgithub.com/"
+# 创建两个目标文件夹（如果不存在）
 mkdir -p "$SCRIPT_DIR/1.ClashRule"
 mkdir -p "$SCRIPT_DIR/1.SingboxRule"
 
-# ----------------------------------------------------------------------
-# URLS 数组
-URLS=(
-#singbox
-#geosite
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/geolocation-!cn.srs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/steam.srs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/steam@cn.srs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/paypal.srs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/netflix.srs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/tiktok.srs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/telegram.srs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/apple.srs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/microsoft.srs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/onedrive.srs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/github.srs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/google.srs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-!cn.srs"
-#    "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/rules/fakeipfilter.json"
-#geoip
-    "https://github.com/qljsyph/ruleset-icon/raw/refs/heads/main/sing-box/geoip/China-ASN-combined-ip.srs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/netflix.srs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/apple.srs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/google.srs"
-#clash
-#geosite
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/discord.mrs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/facebook.mrs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/googlefcm.mrs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/openai.mrs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/spotify.mrs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam.mrs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/twitter.mrs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"
-#geoip
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/facebook.mrs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.mrs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.mrs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs"
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/twitter.mrs"
-    # 新增的 JSON 文件（不包含 sing/meta，扩展名为 json → 归入 SingboxRule）
-    "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/rules/fakeipfilter-cn.json"
-)
-# ----------------------------------------------------------------------
+# 检查 url.ini 是否存在
+URL_INI="$SCRIPT_DIR/url.ini"
+if [ ! -f "$URL_INI" ]; then
+    echo "错误：找不到 $URL_INI，请创建该文件并在每行写入一个 URL（支持 # 注释）"
+    exit 1
+fi
 
+# ----------------------------------------------------------------------
+# 辅助函数：将文件名主体转换为期望的大写/首字母大写格式
 format_filename() {
     local name="$1"
     if echo "$name" | grep -q '^[a-z]*$' && [ ${#name} -le 3 ]; then
@@ -80,74 +29,83 @@ format_filename() {
     fi
 }
 
+# 下载函数：根据原始 URL 自动决定目录和文件名
 download_url() {
     local url="$1"
     local target_dir=""
     local prefix=""
     
-    # 1. 决定存放目录（优先按路径关键词，否则按扩展名）
-    if echo "$url" | grep -qE '/sing/|/sing-box/'; then
+    # 1. 判断目标目录（sing 或 meta）
+    if echo "$url" | grep -q '/sing/'; then
         target_dir="$SCRIPT_DIR/1.SingboxRule"
     elif echo "$url" | grep -q '/meta/'; then
         target_dir="$SCRIPT_DIR/1.ClashRule"
     else
-        # 不包含 sing 或 meta：按扩展名判断
-        local ext="${url##*.}"   # 取最后点后的部分
-        if [ "$ext" = "json" ]; then
-            target_dir="$SCRIPT_DIR/1.SingboxRule"
-        else
-            target_dir="$SCRIPT_DIR/1.ClashRule"
-        fi
+        echo "错误：URL 中未找到 '/sing/' 或 '/meta/'，跳过: $url"
+        return 1
     fi
     
-    # 2. 决定前缀（仅当路径包含 geosite 或 geoip 时才添加）
+    # 2. 判断前缀（geosite 或 geoip）
     if echo "$url" | grep -q '/geosite/'; then
         prefix="GEOSITE"
     elif echo "$url" | grep -q '/geoip/'; then
         prefix="GEOIP"
+    else
+        echo "错误：URL 中未找到 '/geosite/' 或 '/geoip/'，跳过: $url"
+        return 1
     fi
     
-    # 3. 提取文件名、基础名、扩展名
+    # 3. 提取原始文件名
     local original_file="${url##*/}"
     local base="${original_file%.*}"
     local ext="${original_file##*.}"
-    # 若无扩展名（如无点），则 ext 置空
     if [ "$base" = "$ext" ]; then
         ext=""
     else
         ext=".$ext"
     fi
     
-    # 4. 格式化基础名（首字母大写，其余小写，保持连字符等）
+    # 4. 格式化主文件名
     local formatted_base=$(format_filename "$base")
-    
-    # 5. 组装新文件名
-    local new_filename
-    if [ -n "$prefix" ]; then
-        new_filename="${prefix}_${formatted_base}${ext}"
-    else
-        new_filename="${formatted_base}${ext}"
-    fi
-    
+    local new_filename="${prefix}_${formatted_base}${ext}"
     local output_path="${target_dir}/${new_filename}"
     
-    echo "下载: $PROXY$url"
+    # 5. 执行下载（使用代理前缀）
+    local full_url="${proxy}${url}"
+    echo "下载: $full_url"
     echo "  -> $output_path"
     
-    curl -k -L -o "$output_path" "$PROXY$url"
+    curl -k -L -o "$output_path" "$full_url"
     if [ $? -eq 0 ]; then
         echo "成功: $output_path"
     else
-        echo "失败: $PROXY$url"
+        echo "失败: $full_url"
         return 1
     fi
 }
 
-# ==================== 并发下载 ====================
-MAX_CONCURRENT=30          # 同时下载的任务数
-total=${#URLS[@]}
-start=0
+# ----------------------------------------------------------------------
+# 读取 url.ini 中的有效 URL，存入数组 URLS
+URLS=()
+while IFS= read -r line || [ -n "$line" ]; do
+    line="$(echo "$line" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')"
+    case "$line" in
+        ''|'#'*) continue ;;
+    esac
+    URLS+=("$line")
+done < "$URL_INI"
 
+total=${#URLS[@]}
+if [ $total -eq 0 ]; then
+    echo "url.ini 中没有有效 URL，退出。"
+    exit 0
+fi
+
+echo "共读取 $total 个 URL，并发数设为 $MAX_CONCURRENT"
+
+# ----------------------------------------------------------------------
+# 批次并发下载
+start=0
 while [ $start -lt $total ]; do
     end=$((start + MAX_CONCURRENT))
     [ $end -gt $total ] && end=$total

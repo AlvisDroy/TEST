@@ -1,14 +1,23 @@
 #!/system/bin/sh
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-CURL="$SCRIPT_DIR/bin/curl"   # 请确保 curl 已存在且可执行
-proxy="https://gh-proxy.com/"
-# 创建两个目标文件夹（如果不存在）
+
+# 将二进制文件目录加入 PATH
+export PATH="/data/adb/二进制文件:$PATH"
+
+PROXY="https://gh-proxy.com/"
+#PROXY="https://ghfast.top/"
+#PROXY="https://ghproxy.com/"
+#PROXY="https://github.moeyy.cn/"
+#PROXY="https://mirror.ghproxy.com/"
+#PROXY="https://kgithub.com/"
+#PROXY="https://kgithub.com/"
+#PROXY="https://kgithub.com/"
 mkdir -p "$SCRIPT_DIR/1.ClashRule"
 mkdir -p "$SCRIPT_DIR/1.SingboxRule"
+
 # ----------------------------------------------------------------------
-# 在这里列出你要下载的所有 URL
-# 示例URL（根据你的实际需要添加或删除）
+# URLS 数组
 URLS=(
 #singbox
 #geosite
@@ -57,82 +66,85 @@ URLS=(
     "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.mrs"
     "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs"
     "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/twitter.mrs"
+    # 新增的 JSON 文件（不包含 sing/meta，扩展名为 json → 归入 SingboxRule）
+    "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/rules/fakeipfilter-cn.json"
 )
+# ----------------------------------------------------------------------
 
-# 辅助函数：将文件名主体转换为期望的大写/首字母大写格式
-# 参数：原始文件名主体（不含扩展名）
-# 返回：转换后的字符串
 format_filename() {
     local name="$1"
-    # 如果文件名全小写且长度<=3，转为全大写（处理cn, us, jp等缩写）
     if echo "$name" | grep -q '^[a-z]*$' && [ ${#name} -le 3 ]; then
         echo "$name" | tr 'a-z' 'A-Z'
     else
-        # 首字母大写，其余小写
         echo "$(echo "${name:0:1}" | tr 'a-z' 'A-Z')$(echo "${name:1}" | tr 'A-Z' 'a-z')"
     fi
 }
 
-# 下载函数：根据URL自动决定目录和文件名
 download_url() {
     local url="$1"
     local target_dir=""
     local prefix=""
     
-    # 1. 判断目标目录（sing 或 meta）
-    if echo "$proxy$url" | grep -q '/sing/'; then
+    # 1. 决定存放目录（优先按路径关键词，否则按扩展名）
+    if echo "$url" | grep -qE '/sing/|/sing-box/'; then
         target_dir="$SCRIPT_DIR/1.SingboxRule"
-    elif echo "$proxy$url" | grep -q '/meta/'; then
+    elif echo "$url" | grep -q '/meta/'; then
         target_dir="$SCRIPT_DIR/1.ClashRule"
     else
-        echo "错误：URL中未找到 '/sing/' 或 '/meta/'，跳过: $proxy$url"
-        return 1
+        # 不包含 sing 或 meta：按扩展名判断
+        local ext="${url##*.}"   # 取最后点后的部分
+        if [ "$ext" = "json" ]; then
+            target_dir="$SCRIPT_DIR/1.SingboxRule"
+        else
+            target_dir="$SCRIPT_DIR/1.ClashRule"
+        fi
     fi
     
-    # 2. 判断前缀（geosite 或 geoip）
-    if echo "$proxy$url" | grep -q '/geosite/'; then
+    # 2. 决定前缀（仅当路径包含 geosite 或 geoip 时才添加）
+    if echo "$url" | grep -q '/geosite/'; then
         prefix="GEOSITE"
-    elif echo "$proxy$url" | grep -q '/geoip/'; then
+    elif echo "$url" | grep -q '/geoip/'; then
         prefix="GEOIP"
-    else
-        echo "错误：URL中未找到 '/geosite/' 或 '/geoip/'，跳过: $proxy$url"
-        return 1
     fi
     
-    # 3. 提取原始文件名（最后一个 '/' 之后的内容）
+    # 3. 提取文件名、基础名、扩展名
     local original_file="${url##*/}"
-    # 分离主文件名和扩展名
     local base="${original_file%.*}"
     local ext="${original_file##*.}"
-    # 如果扩展名和主文件名相同（无扩展名的情况），则清空扩展名
+    # 若无扩展名（如无点），则 ext 置空
     if [ "$base" = "$ext" ]; then
         ext=""
     else
         ext=".$ext"
     fi
     
-    # 4. 格式化主文件名
+    # 4. 格式化基础名（首字母大写，其余小写，保持连字符等）
     local formatted_base=$(format_filename "$base")
-    local new_filename="${prefix}_${formatted_base}${ext}"
     
-    # 5. 完整输出路径
+    # 5. 组装新文件名
+    local new_filename
+    if [ -n "$prefix" ]; then
+        new_filename="${prefix}_${formatted_base}${ext}"
+    else
+        new_filename="${formatted_base}${ext}"
+    fi
+    
     local output_path="${target_dir}/${new_filename}"
     
-    echo "下载: $proxy$url"
+    echo "下载: $PROXY$url"
     echo "  -> $output_path"
     
-    # 6. 执行下载
-    $CURL -k -L -o "$output_path" "$proxy$url"
+    curl -k -L -o "$output_path" "$PROXY$url"
     if [ $? -eq 0 ]; then
         echo "成功: $output_path"
     else
-        echo "失败: $proxy$url"
+        echo "失败: $PROXY$url"
         return 1
     fi
 }
 
+# ==================== 遍历并下载 ====================
 
-# 遍历并下载
 for url in "${URLS[@]}"; do
     download_url "$proxy$url"
     echo "----------------------------------------"

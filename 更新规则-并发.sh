@@ -1,7 +1,10 @@
 #!/system/bin/sh
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-CURL="$SCRIPT_DIR/bin/curl"   # 请确保 curl 已存在且可执行
+
+# 将二进制文件目录加入 PATH
+export PATH="/data/adb/二进制文件:$PATH"
+
 PROXY="https://gh-proxy.com/"
 #PROXY="https://ghfast.top/"
 #PROXY="https://ghproxy.com/"
@@ -14,7 +17,7 @@ mkdir -p "$SCRIPT_DIR/1.ClashRule"
 mkdir -p "$SCRIPT_DIR/1.SingboxRule"
 
 # ----------------------------------------------------------------------
-# 你的 URLS 数组（保持不变，这里省略显示，请粘贴你自己的）
+# URLS 数组
 URLS=(
 #singbox
 #geosite
@@ -63,6 +66,8 @@ URLS=(
     "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.mrs"
     "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs"
     "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/twitter.mrs"
+    # 新增的 JSON 文件（不包含 sing/meta，扩展名为 json → 归入 SingboxRule）
+    "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/rules/fakeipfilter-cn.json"
 )
 # ----------------------------------------------------------------------
 
@@ -80,41 +85,56 @@ download_url() {
     local target_dir=""
     local prefix=""
     
-    if echo "$PROXY$url" | grep -qE '/(sing|sing-box)/'; then
+    # 1. 决定存放目录（优先按路径关键词，否则按扩展名）
+    if echo "$url" | grep -qE '/sing/|/sing-box/'; then
         target_dir="$SCRIPT_DIR/1.SingboxRule"
-    elif echo "$PROXY$url" | grep -q '/meta/'; then
+    elif echo "$url" | grep -q '/meta/'; then
         target_dir="$SCRIPT_DIR/1.ClashRule"
     else
-        echo "错误：URL中未找到 '/sing/' 或 '/meta/'，跳过: $PROXY$url"
-        return 1
+        # 不包含 sing 或 meta：按扩展名判断
+        local ext="${url##*.}"   # 取最后点后的部分
+        if [ "$ext" = "json" ]; then
+            target_dir="$SCRIPT_DIR/1.SingboxRule"
+        else
+            target_dir="$SCRIPT_DIR/1.ClashRule"
+        fi
     fi
     
-    if echo "$PROXY$url" | grep -q '/geosite/'; then
+    # 2. 决定前缀（仅当路径包含 geosite 或 geoip 时才添加）
+    if echo "$url" | grep -q '/geosite/'; then
         prefix="GEOSITE"
-    elif echo "$PROXY$url" | grep -q '/geoip/'; then
+    elif echo "$url" | grep -q '/geoip/'; then
         prefix="GEOIP"
-    else
-        echo "错误：URL中未找到 '/geosite/' 或 '/geoip/'，跳过: $PROXY$url"
-        return 1
     fi
     
+    # 3. 提取文件名、基础名、扩展名
     local original_file="${url##*/}"
     local base="${original_file%.*}"
     local ext="${original_file##*.}"
+    # 若无扩展名（如无点），则 ext 置空
     if [ "$base" = "$ext" ]; then
         ext=""
     else
         ext=".$ext"
     fi
     
+    # 4. 格式化基础名（首字母大写，其余小写，保持连字符等）
     local formatted_base=$(format_filename "$base")
-    local new_filename="${prefix}_${formatted_base}${ext}"
+    
+    # 5. 组装新文件名
+    local new_filename
+    if [ -n "$prefix" ]; then
+        new_filename="${prefix}_${formatted_base}${ext}"
+    else
+        new_filename="${formatted_base}${ext}"
+    fi
+    
     local output_path="${target_dir}/${new_filename}"
     
     echo "下载: $PROXY$url"
     echo "  -> $output_path"
     
-    $CURL -k -L -o "$output_path" "$PROXY$url"
+    curl -k -L -o "$output_path" "$PROXY$url"
     if [ $? -eq 0 ]; then
         echo "成功: $output_path"
     else
@@ -123,8 +143,8 @@ download_url() {
     fi
 }
 
-# ==================== 并发下载（替换原来的串行 for 循环） ====================
-MAX_CONCURRENT=30          # 同时下载的任务数，可改为 3 或 5
+# ==================== 并发下载 ====================
+MAX_CONCURRENT=30          # 同时下载的任务数
 total=${#URLS[@]}
 start=0
 
